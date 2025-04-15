@@ -1,0 +1,82 @@
+name: basf_challenge_trivia_app
+description: "Industrial Mobility Technology – Flutter App Challenge"
+
+publish_to: 'none'
+
+version: 1.0.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP Client
+  dio: ^5.8.0+1
+
+  # REST call builder
+  retrofit: ^4.4.2
+
+  # API Logs in Terminal
+  pretty_dio_logger: ^1.4.0
+
+  # Dependency injection
+  get_it: ^8.0.3
+
+  # JSON serializer
+  json_serializable: ^6.9.4
+  json_annotation: ^4.9.0
+
+  # Immutable models
+  freezed_annotation: ^2.4.4
+
+  # Hex Color Support
+  hexcolor: ^3.0.1
+
+  ## -- Architecture -- ##
+  # Bloc/State/Event
+  flutter_bloc: ^9.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+
+  # Networking generation
+  retrofit_generator: ^9.1.9
+
+  # Code Generation
+  build_runner: ^2.4.15
+
+  # Immutable models
+  freezed: ^2.5.8
+
+  # Splash & Launch Icon
+  flutter_native_splash: ^2.4.6
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+flutter_native_splash:
+  color: '#ffffff'
+  image: assets/images/splash.png
+  image_android: assets/images/splash.png
+  image_ios: assets/images/splash.png
+  android_gravity: center
+  fullscreen: true
